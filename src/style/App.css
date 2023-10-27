@@ -32,16 +32,21 @@ h1 {
   font-size: 56px;
 }
 
-header {
-  height: 85vh;
-}
-
-#now-showing {
-  background-color: #f5f6f8;
-}
-
 .image-poster {
-  cursor: pointer;
+  width: 300px;
+}
+
+.image-poster img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.single-text {
+  display: -webkit-box;
+  max-width: 300px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .btn-outline-primary {

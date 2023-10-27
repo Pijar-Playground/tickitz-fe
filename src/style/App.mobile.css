@@ -10,30 +10,12 @@
   }
 
   .logo {
-    width: 200px;
+    width: 120px;
   }
 
   .absolute-mobile {
     position: absolute;
     width: 90%;
-  }
-
-  #now-showing,
-  #upcoming-movie {
-    overflow: scroll;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  #now-showing::-webkit-scrollbar {
-    display: none !important;
-  }
-  #upcoming-movie::-webkit-scrollbar {
-    display: none !important;
-  }
-
-  #now-showing .content img {
-    width: 150px;
   }
 
   .justify-content-center-mobile {

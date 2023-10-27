@@ -1,0 +1,38 @@
+#detail_page #header_content img {
+  width: 236.72px;
+  height: 362.83px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.border-image {
+  /* center in vertical and horizontal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #dedede;
+  height: 458px;
+  width: 332px;
+  border-radius: 10px;
+}
+
+.main_content h1 {
+  color: #14142b;
+  font-size: 32px;
+}
+
+.main_content .genres {
+  color: #4e4b66;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.card_cinemas {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}

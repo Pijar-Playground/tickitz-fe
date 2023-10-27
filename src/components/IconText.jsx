@@ -1,14 +1,12 @@
 import React from 'react'
 
-function IconText() {
+function IconText(props) {
+  const { icon, text } = props;
+
     return (
       <div className="d-flex gap-3 justify-content-center-mobile align-items-center">
-        <img
-          className="mb-2"
-          src="/images/sosmed/eva_facebook-outline.svg"
-          alt="icon"
-        />
-        <p>Tickitz Cinema id</p>
+        <img className="mb-2" src={icon} alt="icon" />
+        <p>{text}</p>
       </div>
     );
 }
