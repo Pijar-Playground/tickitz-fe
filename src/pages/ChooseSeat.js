@@ -180,7 +180,7 @@ function ChooseSeat() {
   const [selectedDate, setSelectedDate] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(false);
 
-  const handleApi = async () => {
+  const handleAvailableSeat = async () => {
     try {
       const formatDate = moment(dateMovie).format("dddd, DD MMMM YYYY");
       const requestSeat = await axios.post(
@@ -202,7 +202,7 @@ function ChooseSeat() {
   const handleCheckout = async () => {
     try {
       setIsLoading(true);
-
+      // HIT API BOOKING SEAT
       const formatDate = moment(dateMovie).format("dddd, DD MMMM YYYY");
       const completeDate = `${formatDate} at ${timeMovie}`;
       const requestBooking = await axios.post(
@@ -243,7 +243,14 @@ function ChooseSeat() {
   };
 
   React.useEffect(() => {
-    handleApi();
+    // handle hanya yang sudah login aja
+    if(!localStorage.getItem("token") && !localStorage.getItem("profile")) {
+      if(window.confirm("Silahkan login terlebih dahulu")) {
+        navigate("/")
+      }
+    }
+
+    handleAvailableSeat();
   }, []);
 
   return (
